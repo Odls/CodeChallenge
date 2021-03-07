@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c797145f8155d5743909dbd33fbcced8, type: 3}
+  m_Name: Challenge Hello World
+  m_EditorClassIdentifier: 
+  mTitle: Hello World!
+  mTip: {fileID: 11400000, guid: 966f369f9193939458bc37aec5cf540e, type: 2}
+  mDescription: "\u6B64\u4E43\u7121\u6578\u5DE5\u7A0B\u5E2B\u5922\u60F3\u7834\u6EC5\u7684\u8D77\u9EDE\n\u558A\u51FA\u9019\u53E5\u9B54\u6CD5\u5492\u8A9E\n\u4E00\u540C\u8FCE\u5411\u842C\u52AB\u4E0D\u5FA9\u7684\u6DF1\u6DF5"
+  tests:
+  - showTextFormat: "\u5275\u4E16\u4E4B\u6642"
+    mExpectedResult: Hello World!
