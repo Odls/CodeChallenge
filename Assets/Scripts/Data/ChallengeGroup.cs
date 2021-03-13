@@ -14,8 +14,8 @@ public class ChallengeGroup : ScriptableObject{
 	public void Init(int p_index) {
 		index = p_index;
 		int _butIndex = 0;
-		foreach (var _but in challenges) {
-			_but.Init(_butIndex);
+		foreach (var _challenge in challenges) {
+			_challenge.Init(_butIndex, (E_RESULT_STATE)PlayerPrefs.GetInt(_challenge.name, 0));
 			_butIndex++;
 		}
 	}

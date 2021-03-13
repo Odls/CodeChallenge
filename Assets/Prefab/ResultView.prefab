@@ -746,6 +746,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mark: {fileID: 480887932}
   title: {fileID: 1792158114953035833}
+  input: {fileID: 7732215387099581528}
   expectedResult: {fileID: 85077654}
   challengerResult: {fileID: 210833630}
 --- !u!1 &1792158114953035831
@@ -1154,7 +1155,7 @@ GameObject:
   - component: {fileID: 7732215387099581528}
   - component: {fileID: 9070161709073392274}
   m_Layer: 5
-  m_Name: ExpectedText
+  m_Name: InputText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

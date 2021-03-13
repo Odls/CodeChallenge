@@ -522,6 +522,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b69ad655347416d469593eb4f0ec5f25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  marks:
+  - {fileID: 21300000, guid: c0ce51829a2a77a48a16ed7a6233c8ce, type: 3}
+  - {fileID: 21300000, guid: 281fd93bfdc6eb647ba6e651982e110b, type: 3}
+  - {fileID: 21300000, guid: 393b0a110726cc146863ccee7e1901c2, type: 3}
+  - {fileID: 21300000, guid: 4b04091c6c8e5d640add7dbc1c03e3d3, type: 3}
   challengeGroups:
   - {fileID: 11400000, guid: 998837ba67dde6b45909cd57637459eb, type: 2}
   mChallengeView: {fileID: 253808342}
@@ -1025,6 +1030,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6084862823485968490, guid: 1ddefbeb69cff3e4aab7f7f60707239c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8311765069386279680, guid: 1ddefbeb69cff3e4aab7f7f60707239c,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -1189,6 +1199,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -392
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683041385704753278, guid: 1ddefbeb69cff3e4aab7f7f60707239c,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ddefbeb69cff3e4aab7f7f60707239c, type: 3}

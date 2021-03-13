@@ -13,8 +13,8 @@ internal class ChallengeGroupView : MonoBehaviour{
 		title.text = p_group.index.ToString("00 ") + p_group.title;
 
 		foreach (var _challenge in challengeGroup.challenges) {
-			var __challengeBut = Instantiate(challengeButPrefab, transform);
-			__challengeBut.init(challengeGroup, _challenge);
+			var _challengeBut = Instantiate(challengeButPrefab, transform);
+			_challengeBut.init(challengeGroup, _challenge);
 		}
 	}
 }

@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mTitle: "\u57FA\u672C\u8A9E\u6CD5"
   mChallenges:
+  - {fileID: 11400000, guid: b5d404a83491c2c4aacc5cd7b8e95be8, type: 2}
   - {fileID: 11400000, guid: cbb6f85de8ab95e4dbeff393cf021a0e, type: 2}

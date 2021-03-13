@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 internal class ChallengeView : MonoBehaviour{
 	[SerializeField] Text title, description;
-	[SerializeField] Button runButton, tipButton, editButton;
+	[SerializeField] Button tipButton, editButton;
 	ChallengeGroup group;
 	ChallengeBase challenge;
 	internal void Show(ChallengeGroup p_group, ChallengeBase p_challenge) {

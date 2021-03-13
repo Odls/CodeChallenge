@@ -14,21 +14,17 @@ public abstract class ChallengeBase : ScriptableObject {
 	internal string description => mDescription;
 
 	internal int index { get; private set; }
-	internal void Init(int p_index) {
+	internal E_RESULT_STATE state { get; set; }
+	internal void Init(int p_index, E_RESULT_STATE p_state) {
 		index = p_index;
+		state = p_state;
 	}
 
-	internal abstract int testCount { get; }
-	internal abstract TestItemBase GetTest(int p_index);
-	internal abstract bool RunTest(int p_index);
-}
-public abstract class ChallengeBase<TestT> : ChallengeBase
-where TestT : TestItemBase {
-	[SerializeField] internal TestT[] tests;
-	internal override int testCount => tests.Length;
-	internal override TestItemBase GetTest(int p_index) => tests[p_index];
-	internal override bool RunTest(int p_index) {
-		return DoRunTest(tests[p_index]);
-	}
-	internal abstract bool DoRunTest(TestT p_test);
+	#region Test
+	internal TestItem[] tests;
+	internal int testCount => tests.Length;
+	internal TestItem GetTest(int p_index) => tests[p_index];
+	internal bool RunTest(int p_index) { return RunTest(tests[p_index]); }
+	internal abstract bool RunTest(TestItem p_test);
+	#endregion
 }

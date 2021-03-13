@@ -12,5 +12,6 @@ internal class ChallengeMenuBox : MonoBehaviour{
 			var _groupView = Instantiate(challengeGroupViewPrefab, scrollRect.content);
 			_groupView.init(_group);
 		}
+		scrollRect.content.sizeDelta = new Vector2(scrollRect.content.sizeDelta.x, 10); // trigger Layout
 	}
 }
