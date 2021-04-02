@@ -529,6 +529,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 4b04091c6c8e5d640add7dbc1c03e3d3, type: 3}
   challengeGroups:
   - {fileID: 11400000, guid: 998837ba67dde6b45909cd57637459eb, type: 2}
+  - {fileID: 11400000, guid: 4db4195b641c8fc41a019b5f81b879ae, type: 2}
   mChallengeView: {fileID: 253808342}
   mChallengeMenuBox: {fileID: 3032799734638332614}
   mChallengeResultBox: {fileID: 138232848}
@@ -670,6 +671,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 739750557650350895, guid: 8105bd063520adc4c9c0b4326ed65924,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 117.700195
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8105bd063520adc4c9c0b4326ed65924, type: 3}

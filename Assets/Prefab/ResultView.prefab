@@ -34,7 +34,7 @@ RectTransform:
   - {fileID: 2710899267056129366}
   - {fileID: 85077653}
   m_Father: {fileID: 1792158114635551376}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -62,7 +62,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_RaycastTarget: 0
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -432,7 +432,7 @@ RectTransform:
   - {fileID: 60839585729373286}
   - {fileID: 210833628}
   m_Father: {fileID: 1792158114635551376}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -645,8 +645,8 @@ RectTransform:
   m_Children:
   - {fileID: 1792158114183587608}
   - {fileID: 7784352438991534528}
-  - {fileID: 53567233}
   - {fileID: 1671414440}
+  - {fileID: 53567233}
   - {fileID: 480887931}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -747,6 +747,7 @@ MonoBehaviour:
   mark: {fileID: 480887932}
   title: {fileID: 1792158114953035833}
   input: {fileID: 7732215387099581528}
+  expectedTop: {fileID: 53567232}
   expectedResult: {fileID: 85077654}
   challengerResult: {fileID: 210833630}
 --- !u!1 &1792158114953035831

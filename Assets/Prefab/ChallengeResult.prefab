@@ -258,11 +258,6 @@ MonoBehaviour:
   resultViewPrefab: {fileID: 9076948915147700597, guid: 50dc31d5fd72eeb4e97502b22562c7b2,
     type: 3}
   scrollRect: {fileID: 8999485185765476116}
-  marks:
-  - {fileID: 21300000, guid: c0ce51829a2a77a48a16ed7a6233c8ce, type: 3}
-  - {fileID: 21300000, guid: 281fd93bfdc6eb647ba6e651982e110b, type: 3}
-  - {fileID: 21300000, guid: 393b0a110726cc146863ccee7e1901c2, type: 3}
-  - {fileID: 21300000, guid: 4b04091c6c8e5d640add7dbc1c03e3d3, type: 3}
   scrollSpeed: 5000
 --- !u!1 &8274384334722187634
 GameObject:
@@ -359,7 +354,7 @@ MonoBehaviour:
   m_Elasticity: 0.1
   m_Inertia: 1
   m_DecelerationRate: 0.135
-  m_ScrollSensitivity: 1
+  m_ScrollSensitivity: 50
   m_Viewport: {fileID: 7279174079572058193}
   m_HorizontalScrollbar: {fileID: 0}
   m_VerticalScrollbar: {fileID: 0}

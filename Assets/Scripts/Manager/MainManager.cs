@@ -37,7 +37,7 @@ internal class MainManager : MonoBehaviour{
 
 		string _lastChallengeName = PlayerPrefs.GetString("nowChallenge");
 		ChallengeGroup _lastGroup = null;
-		ChallengeBase _lastChallenge = null;
+		ChallengeData _lastChallenge = null;
 		foreach (var _group in challengeGroups) {
 			foreach (var _challenge in _group.challenges) {
 				if (_challenge.title == _lastChallengeName) {
@@ -65,14 +65,14 @@ internal class MainManager : MonoBehaviour{
 		instance.animator.Play("ToMenu", 0, p_Immediately?1:0);
 		PlayerPrefs.SetString("nowChallenge", "");
 	}
-	public static void ToChallenge(ChallengeGroup p_group, ChallengeBase p_challenge, bool p_Immediately = false) {
+	public static void ToChallenge(ChallengeGroup p_group, ChallengeData p_challenge, bool p_Immediately = false) {
 		state = E_STATE.Challenge;
 		challengeResultBox.ClearResult();
 		challengeView.Show(p_group, p_challenge);
 		instance.RunChallenge(p_challenge);
 		instance.animator.Play("ToChallenge", 0, p_Immediately ? 1 : 0);
 	}
-	public static void EditChallenge(ChallengeBase p_challenge) {
+	public static void EditChallenge(ChallengeData p_challenge) {
 		var _script = MonoScript.FromScriptableObject(p_challenge);
 		AssetDatabase.OpenAsset(_script);
 		PlayerPrefs.SetString("nowChallenge", p_challenge.title);
@@ -82,11 +82,11 @@ internal class MainManager : MonoBehaviour{
 	WaitForSeconds startTestDelay = new WaitForSeconds(0.6f);
 	WaitForSeconds runTestDelay = new WaitForSeconds(0.4f);
 	Coroutine runChallengeCoroutine;
-	void RunChallenge(ChallengeBase p_challenge) {
+	void RunChallenge(ChallengeData p_challenge) {
 		if (runChallengeCoroutine != null) { StopCoroutine(runChallengeCoroutine); }
 		runChallengeCoroutine = StartCoroutine(IeRunChallenge(p_challenge));
 	}
-	IEnumerator IeRunChallenge(ChallengeBase p_challenge) {
+	IEnumerator IeRunChallenge(ChallengeData p_challenge) {
 		challengeResultBox.Talk("<color=#808080>執行中...</color>");
 		yield return startTestDelay;
 		int _testCount = p_challenge.testCount;
@@ -113,7 +113,7 @@ internal class MainManager : MonoBehaviour{
 				break;
 			case E_RESULT_STATE.Fail:
 				challengeResultBox.ShowResult(_test, Result.resultFields, _state);
-				OnChallengeDone(p_challenge, _state, "執行完成！\n但<color=#ff0000>輸出結果不正確</color>");
+				OnChallengeDone(p_challenge, _state, "執行完成！\n但<color=#ff0000>輸出結果不正確</color>，點擊 [編輯] 按鈕修改");
 				yield break;
 				break;
 			case E_RESULT_STATE.Exception:
@@ -125,7 +125,7 @@ internal class MainManager : MonoBehaviour{
 		}
 		OnChallengeDone(p_challenge, E_RESULT_STATE.Success, "<color=#00ff00>執行結果正確！</color>");
 	}
-	public static void OnChallengeDone(ChallengeBase p_challenge, E_RESULT_STATE p_state, string p_talk) {
+	public static void OnChallengeDone(ChallengeData p_challenge, E_RESULT_STATE p_state, string p_talk) {
 		challengeResultBox.Talk(p_talk);
 		p_challenge.state = p_state;
 		challengeButDict[p_challenge.name].RefreahState();

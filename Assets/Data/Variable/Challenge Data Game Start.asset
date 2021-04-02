@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c87712075ca6f134ca9dbfae19d5ff99, type: 3}
-  m_Name: Challenge Game Start
+  m_Name: Challenge Data Game Start
   m_EditorClassIdentifier: 
   mTitle: "\u904A\u6232\u958B\u6F14"
   mTip: {fileID: 0}
-  mDescription: "\u60F3\u77E5\u9053\u9019\u500B\u904A\u6232\u600E\u9EBC\u73A9?\n\u7E3D\u4E4B\u5148\u9032\u5165\u9019\u500B\u6311\u6230\n\u4E26\u6309
+  mDescription: "\u60F3\u77E5\u9053\u9019\u500B\u904A\u6232\u600E\u9EBC\u73A9?\r\n\u7E3D\u4E4B\u5148\u9032\u5165\u9019\u500B\u6311\u6230\r\n\u4E26\u6309
     [\u7DE8\u8F2F] \u6309\u9215\u958B\u59CB\u4F60\u7684\u65C5\u7A0B"

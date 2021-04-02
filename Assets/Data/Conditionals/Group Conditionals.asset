@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7302fdf88b04b84c8c2e393ecfee2cd, type: 3}
+  m_Name: Group Conditionals
+  m_EditorClassIdentifier: 
+  mTitle: "\u689D\u4EF6\u5224\u65B7"
+  mChallenges:
+  - {fileID: 11400000, guid: 4b2f626ead583b5409de7f21232b0a01, type: 2}
+  - {fileID: 11400000, guid: a9436f8a33e036f458647359e612a9bb, type: 2}
+  - {fileID: 11400000, guid: aa0b72528fe3da0428896be4a32ca543, type: 2}
+  - {fileID: 11400000, guid: 9c83021fc9018a44ea65968f09f32632, type: 2}
+  - {fileID: 11400000, guid: 60bd7b0c05e89fd4bb3b71bca317cdb3, type: 2}

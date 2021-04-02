@@ -9,14 +9,14 @@ internal class ChallengeBut : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 	[SerializeField] Image mark;
 
 	ChallengeGroup group;
-	ChallengeBase challenge;
+	ChallengeData challenge;
 	
-	public int index { get; private set; }
+	//public int index { get; private set; }
 
-	public void init(ChallengeGroup p_group, ChallengeBase p_challenge) {
+	public void init(ChallengeGroup p_group, ChallengeData p_challenge) {
 		challenge = p_challenge;
 		group = p_group;
-		title.text = index.ToString("00 ") + challenge.title;
+		title.text = string.Format("{0:00} ", challenge.index) + challenge.title;
 		RefreahState();
 		MainManager.challengeButDict.Add(p_challenge.name, this);
 

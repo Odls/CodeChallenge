@@ -7,8 +7,8 @@ internal class ChallengeView : MonoBehaviour{
 	[SerializeField] Text title, description;
 	[SerializeField] Button tipButton, editButton;
 	ChallengeGroup group;
-	ChallengeBase challenge;
-	internal void Show(ChallengeGroup p_group, ChallengeBase p_challenge) {
+	ChallengeData challenge;
+	internal void Show(ChallengeGroup p_group, ChallengeData p_challenge) {
 		if ((p_group != null) && (p_challenge != null)) {
 			group = p_group;
 			challenge = p_challenge;

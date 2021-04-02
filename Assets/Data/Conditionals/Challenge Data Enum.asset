@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55652ebb9a459e347ad288d6eaa30b68, type: 3}
+  m_Name: Challenge Data Enum
+  m_EditorClassIdentifier: 
+  mTitle: "Enum \u8A08\u7B97\u6A5F"
+  mTip: {fileID: 0}
+  mDescription: "\u7D66\u6578\u5B57\u547D\u540D\uFF0C\u53EB\u8D77\u4F86\u6BD4\u8F03\u65B9\u4FBF\n\n\u4F60\u4E5F\u4E0D\u60F3\u5F9E\u51FA\u751F\u958B\u59CB\u5C31\u88AB\u7A31\u4F5C\u5730\u7403\u4EBA108583476924\u865F\u5C0D\u5427"

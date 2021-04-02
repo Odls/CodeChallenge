@@ -14,7 +14,7 @@ internal class ChallengeResultBox : MonoBehaviour{
 	List<ResultView> resultViews = new List<ResultView>();
 	public void ShowResult(TestItem p_test, List<TestField> p_challengerResults, E_RESULT_STATE p_resultState) {
 		var _resultView = Instantiate(resultViewPrefab, scrollRect.content.transform);
-		_resultView.Init(p_test, p_challengerResults, MainManager.GetMark(p_resultState));
+		_resultView.Init(p_test, p_challengerResults, p_resultState);
 		resultViews.Add(_resultView);
 		ToBottom();
 	}

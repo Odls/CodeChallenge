@@ -9,8 +9,7 @@ public enum E_RESULT_STATE {
 	Exception
 }
 
-public class Result : MonoBehaviour {
-	public static Result instance { get; private set; }
+public static class Result {
 	internal static readonly List<TestField> resultFields = new List<TestField>();
 
 	internal static bool CheckSame(TestField[] targetFields) {
@@ -27,6 +26,13 @@ public class Result : MonoBehaviour {
 
 	public static void Print(int p_int) {
 		resultFields.Add(new TestIntField { fieldValue = p_int });
+	}
+	public static void Print(float p_float) {
+		if (p_float % 1 == 0) {
+			resultFields.Add(new TestFloatField { showFormat="{0:0.0}", fieldValue = p_float });
+		} else {
+			resultFields.Add(new TestFloatField { fieldValue = p_float });
+		}
 	}
 	public static void Print(bool p_bool) {
 		resultFields.Add(new TestBoolField { fieldValue = p_bool });

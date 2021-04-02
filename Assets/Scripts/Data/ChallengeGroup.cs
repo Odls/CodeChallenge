@@ -7,8 +7,8 @@ public class ChallengeGroup : ScriptableObject{
 	[SerializeField] string mTitle;
 	public string title => mTitle;
 
-	[SerializeField] ChallengeBase[] mChallenges;
-	public ChallengeBase[] challenges => mChallenges;
+	[SerializeField] ChallengeData[] mChallenges;
+	public ChallengeData[] challenges => mChallenges;
 
 	public int index { get; private set; }
 	public void Init(int p_index) {

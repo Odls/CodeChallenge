@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e68a736a44535234fbc6ad4f975a15e9, type: 3}
+  m_Name: Challenge Data If
+  m_EditorClassIdentifier: 
+  mTitle: "If \u5224\u65B7"
+  mTip: {fileID: 0}
+  mDescription: "\u4EBA\u751F\n\u7531\u7121\u6578\u7684\u9078\u64C7\u5F15\u9818\u524D\u884C\n\n\u7A0B\u5F0F\n\u7531\u7121\u6578\u7684\u908F\u8F2F\u5224\u65B7\u5806\u780C\u800C\u6210"

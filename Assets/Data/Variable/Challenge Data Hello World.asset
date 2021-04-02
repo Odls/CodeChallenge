@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c797145f8155d5743909dbd33fbcced8, type: 3}
-  m_Name: Challenge Hello World
+  m_Name: Challenge Data Hello World
   m_EditorClassIdentifier: 
   mTitle: Hello World!
   mTip: {fileID: 0}
-  mDescription: "\u6B64\u4E43\u7121\u6578\u5DE5\u7A0B\u5E2B\u5922\u60F3\u7834\u6EC5\u7684\u8D77\u9EDE\n\u558A\u51FA\u9019\u53E5\u9B54\u6CD5\u5492\u8A9E\n\u4E00\u540C\u8FCE\u5411\u842C\u52AB\u4E0D\u5FA9\u7684\u6DF1\u6DF5"
+  mDescription: "\u6B64\u4E43\u7121\u6578\u5DE5\u7A0B\u5E2B\u5922\u60F3\u7834\u6EC5\u7684\u8D77\u9EDE\r\n\u558A\u51FA\u9019\u53E5\u9B54\u6CD5\u5492\u8A9E\r\n\u4E00\u540C\u8FCE\u5411\u842C\u52AB\u4E0D\u5FA9\u7684\u6DF1\u6DF5"

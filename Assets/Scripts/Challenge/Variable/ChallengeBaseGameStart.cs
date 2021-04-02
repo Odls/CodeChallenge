@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ChallengeBaseGameStart : ChallengeBase{
+public abstract class ChallengeBaseGameStart : ChallengeBase {
 	public ChallengeBaseGameStart() {
 		tests = new TestItem[] {
 			new TestItem(

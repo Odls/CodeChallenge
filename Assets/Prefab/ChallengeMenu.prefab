@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3032799733418390864}
   - component: {fileID: 7834029087851704236}
   m_Layer: 5
-  m_Name: Challenge Scroll View
+  m_Name: ChallengeMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Elasticity: 0.1
   m_Inertia: 1
   m_DecelerationRate: 0.135
-  m_ScrollSensitivity: 1
+  m_ScrollSensitivity: 50
   m_Viewport: {fileID: 3032799734997910384}
   m_HorizontalScrollbar: {fileID: 0}
   m_VerticalScrollbar: {fileID: 0}
