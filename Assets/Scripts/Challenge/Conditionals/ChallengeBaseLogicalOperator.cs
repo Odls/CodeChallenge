@@ -10,7 +10,7 @@ public abstract class ChallengeBaseLogicalOperator : ChallengeBase {
 				new TestField[] {
 					new TestV2Field{    showFormat="p_point = {0}",     fieldValue = new Vector2(60, 200)},
 					new TestV2Field{    showFormat="p_rectPos = {0}",   fieldValue = new Vector2(40, 50)},
-					new TestV2Field{    showFormat="p_rectSize = {0}",  fieldValue = new Vector2(100, 150)}
+					new TestV2Field{    showFormat="p_rectSize = {0}",  fieldValue = new Vector2(100, 130)}
 				},
 				new TestField[] {
 					new TestBoolField{ fieldValue = false}

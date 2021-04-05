@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a99afdf5283caa640b41900e1efbbf6f, type: 3}
+  m_Name: Challenge Data Do While
+  m_EditorClassIdentifier: 
+  mTitle: "DoWhile \u8FF4\u5708-\u7269\u7406\u653B\u64CA"
+  mTip: {fileID: 0}
+  mDescription: "\u548C While \u8FF4\u5708\u985E\u4F3C\n\u53EA\u662F\u5224\u65B7\u9806\u5E8F\u8B8A\u4E86\n\n\u7BA1\u4ED6\u5F97\u5148\u505A\u518D\u8AAA\nJust
+    Do It !"

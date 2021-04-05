@@ -70,12 +70,12 @@ internal class MainManager : MonoBehaviour{
 		challengeResultBox.ClearResult();
 		challengeView.Show(p_group, p_challenge);
 		instance.RunChallenge(p_challenge);
+		PlayerPrefs.SetString("nowChallenge", p_challenge.title);
 		instance.animator.Play("ToChallenge", 0, p_Immediately ? 1 : 0);
 	}
 	public static void EditChallenge(ChallengeData p_challenge) {
 		var _script = MonoScript.FromScriptableObject(p_challenge);
 		AssetDatabase.OpenAsset(_script);
-		PlayerPrefs.SetString("nowChallenge", p_challenge.title);
 		EditorApplication.isPlaying = false;
 	}
 
@@ -101,7 +101,7 @@ internal class MainManager : MonoBehaviour{
 				_state = E_RESULT_STATE.NotDo;
 			} catch (System.Exception ex) {
 				_state = E_RESULT_STATE.Exception;
-				Debug.LogException(ex);				
+				Debug.LogException(ex);
 			}
 			switch (_state) {
 			case E_RESULT_STATE.NotDo:
@@ -139,7 +139,7 @@ internal class MainManager : MonoBehaviour{
 		for (int f = 0; f < p_transform.childCount; f++) {
 			UpdateLayout(p_transform.GetChild(f));
 		}
-		
+
 		foreach (var _layout in p_transform.GetComponents<LayoutGroup>()) {
 			_layout.CalculateLayoutInputVertical();
 			_layout.CalculateLayoutInputHorizontal();

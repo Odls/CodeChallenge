@@ -530,6 +530,7 @@ MonoBehaviour:
   challengeGroups:
   - {fileID: 11400000, guid: 998837ba67dde6b45909cd57637459eb, type: 2}
   - {fileID: 11400000, guid: 4db4195b641c8fc41a019b5f81b879ae, type: 2}
+  - {fileID: 11400000, guid: c9249470c8e77cc4eaf104b129aba280, type: 2}
   mChallengeView: {fileID: 253808342}
   mChallengeMenuBox: {fileID: 3032799734638332614}
   mChallengeResultBox: {fileID: 138232848}
@@ -950,7 +951,7 @@ PrefabInstance:
     - target: {fileID: 8549667777917308222, guid: b9fff4202400a94448d54a7d3043d231,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 837
       objectReference: {fileID: 0}
     - target: {fileID: 8549667777917308222, guid: b9fff4202400a94448d54a7d3043d231,
         type: 3}
@@ -960,7 +961,7 @@ PrefabInstance:
     - target: {fileID: 8549667777917308222, guid: b9fff4202400a94448d54a7d3043d231,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 443.5
       objectReference: {fileID: 0}
     - target: {fileID: 8549667777917308222, guid: b9fff4202400a94448d54a7d3043d231,
         type: 3}

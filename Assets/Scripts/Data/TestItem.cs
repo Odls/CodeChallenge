@@ -42,7 +42,7 @@ internal abstract class TestField {
 }
 internal abstract class TestField<TestFieldT> : TestField
 where TestFieldT : TestField<TestFieldT> {
-	internal override bool CheckSame(TestField p_targetField) {
+	internal override sealed bool CheckSame(TestField p_targetField) {
 		if (p_targetField.type != type) {
 			return false;
 		}
@@ -52,7 +52,7 @@ where TestFieldT : TestField<TestFieldT> {
 }
 
 internal abstract class TestValueField<TestFieldT, ValueT> : TestField<TestFieldT>
-where TestFieldT : TestField<TestFieldT> {
+where TestFieldT : TestValueField<TestFieldT, ValueT> {
 	internal ValueT fieldValue;
 	internal override object value => fieldValue;
 	internal string showFormat = "{0}";
@@ -63,22 +63,41 @@ where TestFieldT : TestField<TestFieldT> {
 	}
 }
 internal abstract class TestArrayField<TestFieldT, ValueT> : TestField<TestFieldT>
-where TestFieldT : TestField<TestFieldT> {
+where TestFieldT : TestArrayField<TestFieldT, ValueT> {
 	internal ValueT[] fieldValues;
 	internal override object value => fieldValues;
 	internal string showFormat = "{0}";
 	internal override string showText {
 		get {
 			stringBuilder.Clear();
+			stringBuilder.Append('[');
+			bool _isFirst = false;
 			foreach (var _value in fieldValues) {
-				stringBuilder.AppendFormat(showFormat, _value);
+				if (!_isFirst) {
+					stringBuilder.Append(", ");
+				}
+				stringBuilder.Append(_value);
+				_isFirst = true;
 			}
-			return stringBuilder.ToString();
+			stringBuilder.Append(']');
+			return string.Format(showFormat, stringBuilder.ToString());
 		}
 	}
 	internal override string typeName => (type & E_FIELD_TYPE.TypeMask).ToString() + "[]";
+	internal override bool CheckValueSame(TestFieldT p_targetField) {
+		if (p_targetField.fieldValues.Length != fieldValues.Length) {
+			return false;
+		}
+		for (int f=0; f<fieldValues.Length; f++) {
+			if (!p_targetField.fieldValues[f].Equals(fieldValues[f])) {
+				return false;
+			}
+		}
+		return true;
+	}
 }
 internal class TestIntField : TestValueField<TestIntField, int> { internal override E_FIELD_TYPE type => E_FIELD_TYPE.Int; }
+internal class TestIntArrayField : TestArrayField<TestIntArrayField, int> { internal override E_FIELD_TYPE type => E_FIELD_TYPE.IntArray; }
 internal class TestFloatField : TestValueField<TestFloatField, float> { internal override E_FIELD_TYPE type => E_FIELD_TYPE.Float; }
 internal class TestBoolField : TestValueField<TestBoolField, bool> { internal override E_FIELD_TYPE type => E_FIELD_TYPE.Bool; }
 internal class TestStringField : TestValueField<TestStringField, string> { internal override E_FIELD_TYPE type => E_FIELD_TYPE.String; }

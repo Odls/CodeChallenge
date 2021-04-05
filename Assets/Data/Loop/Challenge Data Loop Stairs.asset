@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 487307a60320d2744b13b719cd4054ee, type: 3}
+  m_Name: Challenge Data Loop Stairs
+  m_EditorClassIdentifier: 
+  mTitle: "\u8FF4\u5708\u7DF4\u7FD2-\u756B\u968E\u68AF"
+  mTip: {fileID: 0}
+  mDescription: "\u5728\u96FB\u8166\u4E0D\u80FD\u986F\u793A\u5716\u7247\u7684\u6642\u4EE3\n\u5C31\u5DF2\u7D93\u6709\u5716\u50CF\u5316\u7684\u96FB\u8166\u904A\u6232\u4E86\n\u7528\u6587\u5B57\u756B\u756B\u5427\n\u4E5F\u5C31\u662F\u50B3\u8AAA\u4E2D\u7684...\n\u25E2\u25A0\u2605\u25A0\u2605\u25A0\u2605\u25A0\u2605\u25A0\u2605\u25A0\u25E3\n\u2605     
+    Ascii Art      \u2605\n\u25E5\u25A0\u2605\u25A0\u2605\u25A0\u2605\u25A0\u2605\u25A0\u2605\u25A0\u25E4"

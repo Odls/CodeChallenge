@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d9d95ffb703e0642974e467a66e3f6a, type: 3}
+  m_Name: Challenge Data While
+  m_EditorClassIdentifier: 
+  mTitle: "While \u8FF4\u5708-\u9B54\u6CD5\u653B\u64CA"
+  mTip: {fileID: 0}
+  mDescription: "        while(\u9084\u6C92\u51FA\u8CA8) {\r\n            if(\u77F3\u982D\u6578<30)
+    {\n                \u8AB2\u91D1;\n            }\n            \u5341\u9023\u62BD;\n       
+    }"

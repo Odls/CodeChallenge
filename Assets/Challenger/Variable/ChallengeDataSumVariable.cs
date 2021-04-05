@@ -7,7 +7,7 @@ public class ChallengeSumVariable : ChallengeBaseSumVariable {
 	/*
 		┌───────── 說明區 ─────────┐
 		變數 sum 初始值是 0
-		每執行一次 SumVariable 須讓時 sum 增加 p_addNumber
+		每執行一次 SumVariable 時，需讓 sum 增加 p_addNumber
 		增加後，輸出 sum
 		└──────────────────────┘
 	*/

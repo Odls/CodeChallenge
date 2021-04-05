@@ -15,7 +15,7 @@ internal class ChallengeView : MonoBehaviour{
 
 			title.text = $"{group.index:00}-{challenge.index:00}\n{challenge.title}";
 			description.text = challenge.description;
-
+			description.alignment = (challenge.description.Contains("}")) ? TextAnchor.UpperLeft : TextAnchor.UpperCenter;
 			tipButton.gameObject.SetActive(challenge.tip != null);
 		} else {
 			group = null;

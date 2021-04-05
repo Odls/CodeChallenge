@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7b41677c25ae44d839e2d5c5cbac64, type: 3}
+  m_Name: Challenge Data For Loop
+  m_EditorClassIdentifier: 
+  mTitle: "\u57FA\u672C For \u8FF4\u5708"
+  mTip: {fileID: 0}
+  mDescription: "\u91CD\u8907\u6027\u5DE5\u4F5C\u4E0D\u662F\u4EBA\u5E79\u7684\n\u4EA4\u7D66\u96FB\u8166\u53BB\u8DD1\u5C31\u597D"

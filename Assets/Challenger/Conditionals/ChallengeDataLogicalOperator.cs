@@ -11,8 +11,8 @@ public class ChallengeLogicalOperator : ChallengeBaseLogicalOperator {
 
 			┌── p_rectSize.x ──┐
 			▕　　　　　　　　　　　▕
-		p_rectSize.y　　　　　　　　▕   ●p_point
-			▕　　　　　　　　　　　▕
+		　　▕　　　　　　　　　p_rectSize.y
+			▕　　　　　　　　　　　▕				●p_point
 			●───────────┘
 		p_rectPos
 

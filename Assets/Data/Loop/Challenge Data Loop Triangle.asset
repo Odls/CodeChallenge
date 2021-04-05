@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f72eac78cada6c647bf8558c32bf4788, type: 3}
+  m_Name: Challenge Data Loop Triangle
+  m_EditorClassIdentifier: 
+  mTitle: "\u8FF4\u5708\u7DF4\u7FD2-\u756B\u4E09\u89D2\u5F62"
+  mTip: {fileID: 0}
+  mDescription: "\u5728\u968E\u68AF\u52A0\u4E00\u9EDE\u88DD\u98FE\u5C31\u8B8A\u6210\u4E86\u4E09\u89D2\u5F62\n\u958B\u59CB\u7A0D\u5FAE\u52D5\u9EDE\u8166\n\u60F3\u60F3\u600E\u9EBC\u5728\u8FF4\u5708\u4E2D\u7D44\u5408\u5B57\u5143"
